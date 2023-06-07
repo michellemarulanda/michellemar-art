@@ -1,60 +1,135 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página web de Michelle Marulanda, artista que vende cuadros de dibujos a lápiz de animales y elementos de la naturaleza.">
-  <title>Michelle Marulanda - Artista</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Portafolio de Michelle Marulanda</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        /* Estilo para el encabezado */
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-top: 0;
+        }
+        
+        /* Estilo para los subtítulos */
+        h2 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        /* Estilo para los párrafos */
+        p {
+            font-size: 18px;
+            color: #777;
+            line-height: 1.5;
+        }
+        
+        /* Estilo para las secciones */
+        section {
+            margin-bottom: 50px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Estilo para los enlaces */
+        a {
+            color: #555;
+            text-decoration: none;
+        }
+        
+        /* Estilo para los enlaces al pasar el cursor */
+        a:hover {
+            color: #333;
+        }
+        
+        /* Estilo para el menú de navegación */
+        nav {
+            margin-bottom: 30px;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Estilo para los enlaces del menú */
+        nav a {
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        /* Estilo para los enlaces del menú al pasar el cursor */
+        nav a:hover {
+            color: #999;
+        }
+        
+        /* Estilo para el footer */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        /* Estilo para el texto del footer */
+        footer p {
+            margin: 0;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <header>
     <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#portfolio">Portafolio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+        <a href="#inicio">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-  </header>
-
-  <main>
+    
     <section id="inicio">
-      <div class="container">
         <h1>Michelle Marulanda</h1>
-        <h2>Artista</h2>
-        <p>Bienvenido/a a mi página web. Aquí podrás encontrar una selección de mis cuadros de dibujos a lápiz de animales y elementos de la naturaleza. ¡Espero que te gusten!</p>
-      </div>
+        <h2>Artista e Ilustradora</h2>
     </section>
-
-    <section id="portfolio">
-      <div class="container">
+    
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>
+            ¡Hola! Soy Michelle Marulanda, una artista apasionada por plasmar la belleza de la naturaleza en mis cuadros de dibujos a lápiz, a veces a blanco y negro, a veces con notas de color y acuarela. Cada trazo y sombra que dibujo tiene una historia y una emoción detrás.
+        </p>
+        <p>
+            Dibujar arte es mi manera de conectar con el mundo que me rodea, transmitiendo la serenidad y el asombro que siento por los animales y los paisajes naturales.
+        </p>
+        <p>
+            Mi objetivo es despertar emociones y hacerte sentir esa conexión profunda con la naturaleza a través de mis obras. Cada dibujo es una invitación a explorar la magia de nuestro entorno, a detenernos un instante y maravillarnos ante la majestuosidad de un león o la delicadeza de una mariposa.
+        </p>
+        <p>
+            Quiero que mis cuadros te inspiren y te transporten a un lugar donde puedas olvidar el estrés y encontrar paz. Cada línea que trazo está impregnada de amor y dedicación, buscando capturar la esencia de la vida y transmitirla a través de mis dibujos.
+        </p>
+    </section>
+    
+    <section id="portafolio">
         <h2>Portafolio</h2>
-        <div class="gallery">
-          <img src="img/imagen1.jpg" alt="Imagen 1">
-          <img src="img/imagen2.jpg" alt="Imagen 2">
-          <img src="img/imagen3.jpg" alt="Imagen 3">
-          <!-- Agrega más imágenes según sea necesario -->
-        </div>
-      </div>
+        <!-- Aquí puedes agregar tus obras y descripciones -->
     </section>
-
+    
     <section id="contacto">
-      <div class="container">
         <h2>Contacto</h2>
-        <p>Si te interesa alguna de mis obras o deseas más información, no dudes en contactarme a través del siguiente formulario:</p>
-        <form action="enviar.php" method="POST">
-          <input type="text" name="nombre" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Correo electrónico" required>
-          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
+        <!-- Aquí puedes agregar tus datos de contacto -->
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Michelle Marulanda - Todos los derechos reservados.</p>
-  </footer>
+    
+    <footer>
+        <p>&copy; 2023 Michelle Marulanda. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
